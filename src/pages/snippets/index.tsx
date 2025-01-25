@@ -33,7 +33,7 @@ export default function Snippets({ user }: HomeProps) {
     const [searchTerm, setSearchTerm] = useState('')
 
     function handleToSnippetSeeComment(id: string) {
-        window.location.href = `${process.env.NEXT_PUBLIC_URL}/snippet/${id}#comentar`
+        window.location.href = `${process.env.NEXT_PUBLIC_URL}/snippet/${id}`
     }
 
     useEffect(() => {
