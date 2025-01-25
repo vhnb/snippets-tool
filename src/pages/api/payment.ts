@@ -9,7 +9,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse,
     const payment = new Payment(client)
 
     const body = {
-        transaction_amount: 0.1,
+        transaction_amount: 5,
         description: `Acesso a ferramenta Snippets`,
         payment_method_id: 'pix',
         payer: {
