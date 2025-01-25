@@ -66,7 +66,7 @@ export default function Snippets({ user }: HomeProps) {
             })
         }
         fetchSnippets()
-    }, [user?.email])
+    }, [user?.email, searchTerm])
 
     return (
         <>
