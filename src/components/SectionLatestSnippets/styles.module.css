@@ -1,0 +1,123 @@
+.sectionLatestSnippets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 60vh;
+    background-color: #000000;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 90%;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .titleSectionLatestSnippets{
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets {
+   margin-bottom: 0px; 
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets .cardSnippetsLatestPublic {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 10px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c65;
+    border-radius: 8px;
+    transition: 0.2s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets .cardSnippetsLatestPublic .alignItensCard {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets .cardSnippetsLatestPublic h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    background-color: #fff;
+    color: #000000cf;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    margin-bottom: 0;
+    border: 1px solid #ffffff;
+    padding: 4px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets .cardSnippetsLatestPublic .contentInfoSnippet {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets .cardSnippetsLatestPublic .contentInfoSnippet h1 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0px;
+    font-weight: bold;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+    max-width: 320px;
+}
+
+.sectionLatestSnippets .contentSectionLatestSnippets .containerCarouselLatestSnippets .cardSnippetsLatestPublic p {
+    background-color: #131313ad;
+    border-radius: 8px;
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    color: #777;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .sectionLatestSnippets {
+        min-height: 70vh;
+    }
+    .sectionLatestSnippets .contentSectionLatestSnippets .titleSectionLatestSnippets {
+        font-size: 28px;
+        text-align: center; 
+    }
+}

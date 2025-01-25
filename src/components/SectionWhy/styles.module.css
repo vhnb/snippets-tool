@@ -1,0 +1,105 @@
+.sectionWhy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    background-color: #000000;
+}
+
+.sectionWhy .contentSectionWhy {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 90%;
+}
+
+.sectionWhy .contentSectionWhy h1 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 50px;
+}
+
+.sectionWhy .contentSectionWhy .contentCardsInfoWhy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+}
+
+.sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy .iconCardInfoWhy {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #eaeaeae8;
+}
+
+.sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy p {
+    color: #d6d6d689;
+}
+
+@media screen and (max-width: 1200px) {
+    .sectionWhy {
+        min-height: 100vh;
+    }
+
+    .sectionWhy .contentSectionWhy {
+        align-items: center;
+    }
+
+    .sectionWhy .contentSectionWhy h1 {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 28px;
+    }
+
+    .sectionWhy .contentSectionWhy .contentCardsInfoWhy {
+        flex-direction: column;
+    }
+
+    .sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy .iconCardInfoWhy {
+        font-size: 25px;
+        margin-bottom: 15px;
+        color: #eaeaeae8;
+    }
+
+    .sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy h1 {
+        margin-bottom: 15px;
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .sectionWhy .contentSectionWhy .contentCardsInfoWhy .cardInfoWhy p {
+        color: #d6d6d689;
+        font-size: 15px;
+    }
+}
