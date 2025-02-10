@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { MercadoPagoConfig, Payment } from 'mercadopago';
 import { db } from "@/service/firebaseConnection";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, updateDoc, doc } from "firebase/firestore";
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse,) {
     const client = new MercadoPagoConfig({ accessToken: process.env.MP_ACCESS_TOKEN!, options: { timeout: 10000 } })
@@ -32,6 +32,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse,
                 })
 
                 if (status === "approved") {
+                    const userDocRef = doc(db, 'users', req.body.userMail)
+                    await updateDoc(userDocRef, {
+                        role: 'subscriber'
+                    })
+
                     return res.status(200).json({
                         status: status,
                         message: "Pagamento aprovado com sucesso.",
