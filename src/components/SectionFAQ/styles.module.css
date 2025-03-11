@@ -1,0 +1,112 @@
+.sectionFAQ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 60vh;
+    background-color: #000000;
+}
+
+.sectionFAQ .contentSectionFAQ {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 90%;
+}
+
+.sectionFAQ .contentSectionFAQ .titleSectionFAQ {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 40px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord {
+    width: 100%;
+    border: 1px solid #9c9c9c46;
+    border-radius: 8px;
+    background-color: #ffffff10;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord:last-child {
+    border-bottom: 0px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord:nth-child(1) {
+    border-bottom: 1px solid #9c9c9c46;
+    border-radius: 0px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord:nth-child(2) {
+    border-bottom: 1px solid #9c9c9c46;
+    border-radius: 0px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord:nth-child(3) {
+    border-bottom: 1px solid #9c9c9c46;
+    border-radius: 0px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord:nth-child(4) {
+    border-bottom: 1px solid #9c9c9c46;
+    border-radius: 0px;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord:nth-child(5) {
+    border-bottom: 1px solid #9c9c9c46;
+    border-radius: 0px;
+}
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord .btnAccord {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffffe7;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100%;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord .btnAccord:hover .iconPlus {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord .btnAccord .iconPlus {
+    color: #6e6e6e;
+    transition: 0.2s;
+}
+
+.sectionFAQ .contentSectionFAQ .contentAccord .cardAccord .textContentAccord {
+    color: #b3b3b3;
+    margin-bottom: 11px;
+    font-size: 14px;
+    padding: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .sectionFAQ {
+        min-height: 95vh;
+    } 
+    .sectionFAQ .contentSectionFAQ .titleSectionFAQ {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .sectionFAQ {
+        min-height: 85vh;
+    } 
+}
