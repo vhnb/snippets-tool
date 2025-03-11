@@ -1,0 +1,180 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 58px);
+    background-color: #000000;
+    background-image: linear-gradient(#6c6c6c23 1px, transparent 1px),
+        linear-gradient(90deg, #6c6c6c23 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 5), rgba(0, 0, 0, 0.055));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1400px;
+    width: 90%;
+    z-index: 1;
+}
+
+.container .contentContainer .contentTextMain {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .contentContainer .contentTextMain article {
+    background-color: #0f0f0fdd;
+    border: 1px solid #6c6c6c43;
+    border-radius: 3rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container .contentContainer .contentTextMain article:hover {
+    background-color: #6c6c6c43;
+    transition: 0.3s;
+}
+
+.container .contentContainer .contentTextMain article:hover p {
+    color: #d9d9d9;
+    transition: 0.3s;
+}
+
+.container .contentContainer .contentTextMain article p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+.container .contentContainer .contentTextMain article span {
+    color: #fff;
+    background-color: #6c6c6c43;
+    margin-bottom: 0;
+    height: 90%;
+    padding: 0.5px;
+    margin-right: 10px;
+    margin-left: 7px;
+}
+
+.container .contentContainer .contentTextMain h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.container .contentContainer .contentTextMain .descPayment {
+    color: rgba(255, 255, 255, 0.635);
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.container .contentContainer .contentTextMain .groupBtnsMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .contentContainer .contentTextMain .groupBtnsMain button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 19px;
+    border-radius: 8px;
+    margin-right: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ffffff28;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+}
+
+.container .contentContainer .contentTextMain .groupBtnsMain button:hover {
+    background-color: #fff;
+    color: #000000cf;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.container .contentContainer .containerVideo {
+    height: 400px;
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .contentContainer {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container .contentContainer .contentTextMain {
+        align-items: start;
+    }
+
+    .container .contentContainer .contentTextMain h1 {
+        margin-top: 30px;
+        text-align: start;
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+
+    .container .contentContainer .contentTextMain .descPayment {
+        text-align: start;
+        margin-bottom: 25px;
+    }
+
+    .container .contentContainer .contentTextMain article {
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .container .contentContainer .contentTextMain article p {
+        margin-bottom: 0;
+        font-size: 10px;
+        color: #9f9f9f;
+    }
+
+    .container .contentContainer .containerVideo {
+        display: none;
+    }
+
+    .container .contentContainer .contentTextMain .groupBtnsMain {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container .contentContainer .contentTextMain .groupBtnsMain button {
+        margin-bottom: 10px;
+        width: 100%;
+        margin-right: 0px;
+    }
+}

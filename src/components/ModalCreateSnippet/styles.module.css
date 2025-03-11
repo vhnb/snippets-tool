@@ -1,0 +1,142 @@
+.containerModal .dialogModal .contentModal {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c46;
+    padding: 20px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal .headerModal h1 {
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal .iconModalHeader {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: #fff;
+    transition: 0.2s;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal .iconModalHeader:hover {
+    background-color: #ffffff28;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.containerModal .dialogModal .contentModal form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal form input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff0f;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form input:focus {
+    border: 1px solid #ffffffe4;
+}
+
+.containerModal .dialogModal .contentModal form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff0f;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form textarea:focus {
+    border: 1px solid #ffffffe4;
+}
+
+.containerModal .dialogModal .contentModal form .btnFilter {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff0f;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form .btnFilter option {
+    color: #000;
+}
+
+.containerModal .dialogModal .contentModal form button {
+    background-color: #fff;
+    color: #000000cf;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form button:hover {
+    transition: 0.3s;
+    background-color: #d3d3d3;
+}
+
+.containerModal .dialogModal .contentModal form .contentIfSnippetPublic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal form .contentIfSnippetPublic label {
+    color: #c9c9c9;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.containerModal .dialogModal .contentModal form .contentIfSnippetPublic label span {
+    font-size: 15px;
+}

@@ -1,0 +1,126 @@
+.sectionFunction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 95vh;
+  background-color: #000000;
+}
+
+.sectionFunction .contentSectionFunction {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1400px;
+  width: 90%;
+}
+
+.sectionFunction .contentSectionFunction .titleSectionFunction {
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-weight: bold;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions:last-child {
+  grid-template-columns: 1fr 2fr;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions:nth-child(1) .cardFunction:nth-child(1) {
+  background-image: url('/exampleDashboard.png');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions:nth-child(1) .cardFunction:nth-child(2) {
+  background-image: url('/image8.png');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions:last-child .cardFunction:nth-child(1) {
+  background-image: url('/mobilebanner.png');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions:last-child .cardFunction:nth-child(2) {
+  background-image: url('/banner1.png');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions .cardFunction {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  height: 25vh;
+  padding: 15px;
+  border: 1px solid #6c6c6c47;
+  width: 100%;
+  border-radius: 8px;
+  filter: brightness(120%);
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions .cardFunction:hover {
+  border: 1px solid #6c6c6c51;
+  transition: 0.3s;
+  filter: brightness(125%);
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions .cardFunction p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #bdbdbd;
+  transition: 0.3s;
+}
+
+.sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions .cardFunction:hover p {
+  color: #dedede;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionFunction {
+    min-height: 140vh;
+  }
+
+  .sectionFunction .contentSectionFunction .titleSectionFunction {
+    text-align: center;
+    margin-top: 25px;
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .sectionFunction .contentSectionFunction .contentInfoFunctions .containerInfoFunctions:last-child {
+    grid-template-columns: 1fr;
+  }
+}
