@@ -1,0 +1,126 @@
+.folderCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 265px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.folderCard .iconFolder {
+    font-size: 16px;
+    margin-right: 9px;
+}
+
+.folderCard h1 {
+    font-size: 14px;
+    color: #e3e3e3;
+    margin-bottom: 0px;
+    font-weight: normal;
+}
+
+.folderCard .contentFolderCard {
+    display: flex;
+}
+
+.folderCard .dropdownFolderOption {
+    padding: 10px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c46;
+    width: 265px;
+    border-radius: 8px;
+}
+
+.folderCard .dropdownFolderOption .btnDeleteFolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #cd353510;
+    color: #d13030f4;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.folderCard .dropdownFolderOption .btnDeleteFolder:hover {
+    background-color: #cd35353f;
+    transition: 0.3s;
+}
+
+.folderCard .dropdownFolderOption .btnDeleteFolder .iconDeleteFolder {
+    font-size: 16px;
+}
+
+.folderCard .dropdownFolderOption .btnFolderOpen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #c7c7c709;
+    color: #c7c7c7;
+    transition: 0.3s;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.folderCard .dropdownFolderOption .btnFolderOpen:hover {
+    background-color: #c7c7c71f;
+    transition: 0.3s;
+}
+
+.folderCard .dropdownFolderOption .btnFolderOpen .iconFolderOpen {
+    font-size: 16px;
+}
+
+.folderCard .dropdownFolderOption .btnEditFolder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #c7c7c709;
+    color: #c7c7c7;
+    transition: 0.3s;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.folderCard .dropdownFolderOption .btnEditFolder:hover {
+    background-color: #c7c7c71f;
+    transition: 0.3s;
+}
+
+.folderCard .dropdownFolderOption .btnEditFolder .iconEditFolder {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .containerMainFolders {
+        width: 100%;
+    }
+
+    .containerMainFolders .folderCard {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .containerMainFolders .folderCard:first-child {
+        margin-top: 0px;
+    }
+
+    .containerMainFolders .folderCard .dropdownFolderOption {
+        width: 100%;
+    }
+}

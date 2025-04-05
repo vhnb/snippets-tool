@@ -1,0 +1,52 @@
+.cardNotification {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.cardNotification .iconNotification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border: 1px solid #6c6c6c96;
+    color: #a3a3a3;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.cardNotification .contentCardNotification {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.cardNotification .contentCardNotification h1 {
+    color: #e3e3e3;
+    font-size: 13px;
+    margin-bottom: 0px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+    max-width: 200px;
+}
+
+.cardNotification .contentCardNotification p {
+    font-size: 10px;
+    margin-bottom: 0px;
+    font-style: normal;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+    color: #bebebe;
+    max-width: 230px;
+}

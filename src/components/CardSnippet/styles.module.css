@@ -1,0 +1,318 @@
+.snippetCard {
+    display: flex;
+    align-items: start;
+    padding: 15px;
+    justify-content: center;
+    flex-direction: column;
+    width: 545px;
+    margin-bottom: 10px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c65;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.snippetCard:hover {
+    background-color: #0b0b0b;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.snippetCard .headerCardSnippet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .btnAddToFolder {
+    background-color: #c7c7c71f;
+    color: #c7c7c7;
+    transition: 0.2s;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 12px;
+}  
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .btnAddToFolder:hover {
+    background-color: #c7c7c743;
+    transition: 0.2s;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd {
+    padding: 10px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c46;
+    width: 265px;
+    border-radius: 8px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToAdd:last-child {
+    margin-bottom: 0px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToAdd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #c7c7c709;
+    color: #c7c7c7;
+    transition: 0.3s;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToAdd:hover {
+    background-color: #c7c7c71f;
+    transition: 0.3s;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToAdd .nameFolderToAdd {
+    margin-bottom: 0px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToAdd .iconFolderToAdd {
+    font-size: 15px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToRemove {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #cd353510;
+    color: #d13030f4;
+    transition: 0.3s;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToRemove:only-child {
+    margin-bottom: 0px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToRemove:hover {
+    background-color: #cd35353f;
+    transition: 0.3s;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToRemove .nameFolderToAdd {
+    margin-bottom: 0px;
+}
+
+.snippetCard .headerCardSnippet .contentHeaderCardSnippet .containerFolderToAdd .dropdownFolderToAdd .folderToRemove .iconFolderToAdd {
+    font-size: 15px;
+}
+
+.snippetCard .headerCardSnippet h2 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16.5px;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+    max-width: 350px;
+}
+
+.snippetCard .headerCardSnippet .isPublic {
+    margin-bottom: 0px;
+    margin-left: 8px;
+    font-size: 12px;
+    border-radius: 8px;
+    color: #4269e8;
+    padding: 5px 8px;
+    border-radius: 8px;
+    transition: 0.2s;
+    background-color: #4269e82b;
+}
+
+.snippetCard .headerCardSnippet .isPublic:hover {
+    background-color: #4269e853;
+    transition: 0.2s;
+}
+
+.snippetCard .headerCardSnippet .isPrivate {
+    display: none;
+}
+
+.snippetCard .codeSnippet {
+    background-color: #131313ad;
+    border-radius: 8px;
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    color: #777;
+    font-size: 14px;
+}
+
+.snippetCard .footerCardSnippet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.snippetCard .footerCardSnippet span {
+    margin-bottom: 0px;
+    font-size: 11px;
+    border: 1px solid #c7c7c7ab;
+    padding: 3px 10px;
+    border-radius: 8px;
+    background-color: #c7c7c71f;
+    color: #c7c7c7;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.snippetCard:hover .fuctionSnippets {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnEdit {
+    font-size: 12px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4269e823;
+    color: #4269e8;
+    transition: 0.2s;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnEdit:hover {
+    transition: 0.2s;
+    background-color: #4269e853;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnDelete {
+    font-size: 12px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #cd35353f;
+    color: #d13030f4;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnDelete:hover {
+    transition: 0.2s;
+    background-color: #cd353565;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnCopy {
+    font-size: 12px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c7c7c71f;
+    color: #c7c7c7;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnCopy:hover {
+    transition: 0.2s;
+    background-color: #c7c7c743;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnDownload {
+    font-size: 12px;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c7c7c71f;
+    color: #c7c7c7;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+
+.snippetCard .footerCardSnippet .fuctionSnippets .btnDownload:hover {
+    transition: 0.2s;
+    background-color: #c7c7c743;
+}
+
+@media screen and (max-width: 1200px) {
+    .snippetCard .footerCardSnippet span {
+        margin-top: 8px;
+    }
+
+    .snippetCard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .snippetCard .footerCardSnippet .fuctionSnippets {
+        flex-direction: column;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .snippetCard .footerCardSnippet {
+        align-items: start;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .snippetCard .headerCardSnippet h2 {
+        max-width: 170px;
+    }
+    .snippetCard .footerCardSnippet .fuctionSnippets .btnEdit {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    
+    .snippetCard .footerCardSnippet .fuctionSnippets .btnDelete {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    
+    .snippetCard .footerCardSnippet .fuctionSnippets .btnCopy {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    
+    .snippetCard .footerCardSnippet .fuctionSnippets .btnDownload {
+        width: 100%;
+        margin-left: 0px;
+    }
+}

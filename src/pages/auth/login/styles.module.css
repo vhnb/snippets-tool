@@ -1,0 +1,135 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 58px);
+    background-color: #000000;
+    background-image: linear-gradient(#6c6c6c23 1px, transparent 1px),
+        linear-gradient(90deg, #6c6c6c23 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 5), rgba(0, 0, 0, 0.055));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.container .contentContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 90%;
+    z-index: 1;
+}
+
+.container .contentContainer .btnToBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #385df2;
+}
+
+.container .contentContainer a:hover {
+    color: #385df2;
+}
+
+.container .contentContainer h1 {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.container .contentContainer p {
+    color: rgba(255, 255, 255, 0.635);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.container .contentContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .contentContainer form input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #ffffff28;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.container .contentContainer form input:focus {
+    border: 1px solid #ffffffe4;
+}
+
+.container .contentContainer form input:disabled {
+    background-color: #4a4a4a28;
+    color: #9e9e9ece;
+}
+
+.container .contentContainer form button {
+    background-color: #fff;
+    color: #000000cf;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.container .contentContainer form button:hover {
+    transition: 0.3s;
+    background-color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+}
+
+.container .contentContainer form button:disabled {
+    background-color: #a0a0a0;
+    cursor: default;
+}
+
+.container .contentContainer .textAlertUser {
+    font-size: 12px;
+}
+
+.container .contentContainer .textAlertUser a {
+    text-decoration: underline;
+    transition: 0.2s;
+    color: #385df2;
+}
+
+.container .contentContainer .textAlertUser a:hover {
+    color: #385df2;
+    transition: 0.2s;
+    cursor: pointer;
+}

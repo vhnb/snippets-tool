@@ -1,0 +1,446 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: calc(100vh - 58px);
+    background-color: #000000;
+}
+
+.container .contentContainer {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 90%;
+    z-index: 1;
+}
+
+.container .contentContainer .contentFunctionCreateSnippets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .contentContainer .contentFunctionCreateSnippets .titleDashboard {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.container .contentContainer .contentFunctionCreateSnippets .btnCreateSnippets {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ffffff17;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #6c6c6c46;
+}
+
+.container .contentContainer .contentFunctionCreateSnippets .btnCreateSnippets:hover {
+    background-color: #fff;
+    color: #000000cf;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .contentContainer .contentStatistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.iconSnippetsStatistics {
+    color: #4269e8;
+    font-size: 18px;
+}
+
+.container .contentContainer .contentFunctionsUser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.container .contentContainer .contentFunctionsUser form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 820px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c46;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.container .contentContainer .contentFunctionsUser form input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.container .contentContainer .contentFunctionsUser .btnFilter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ffffff06;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #6c6c6c46;
+}
+
+.container .contentContainer .contentFunctionsUser .btnFilter:hover {
+    background-color: #ffffff0c;
+}
+
+.container .contentContainer .contentFunctionsUser .btnFilter option {
+    color: #000;
+}
+
+.container .contentContainer .contentFunctionsUser .btnCreateFolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #ffffff06;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #6c6c6c46;
+}
+
+.container .contentContainer .contentFunctionsUser .btnCreateFolder:hover {
+    background-color: #ffffff0c;
+}
+
+.container .contentContainer .contentFunctionsUser .btnCreateFolder:disabled {
+    background-color: #68686806;
+    color: #888888;
+    transition: 0.7s;
+}
+
+.container .contentContainer .contentFunctionsUser .btnCreateFolder:disabled:hover {
+    background-color: #cd353509;
+    border: 1px solid #cd35353f;
+    transition: 0.7s;
+}
+
+.container .contentContainer .line {
+    width: 100%;
+    height: 0.5px;
+    padding: 0.5px;
+    background-color: #6c6c6c23;
+    margin-bottom: 15px;
+}
+
+.container .contentContainer .contentAllFolders {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.container .contentContainer .contentAllFolders .folderCardGhost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 265px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px dashed #6c6c6c65;
+    cursor: default;
+}
+
+.container .contentContainer .contentAllFolders .folderCardGhost .iconFolderGhost {
+    font-size: 16px;
+    color: #6c6c6c65;
+}
+
+.container .contentContainer .contentAllSnippets {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.textConfirmLogout {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.btnConfirmLogout {
+    width: 100%;
+    background-color: #cd35353f;
+    color: #d13030f4;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    padding: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btnConfirmLogout:hover {
+    background-color: #cd35357d;
+    transition: 0.3s;
+}
+
+.lineModal {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 0.5px;
+    padding: 0.5px;
+    background-color: #6c6c6c3a;
+}
+
+.containerModal .dialogModal .contentModal {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c46;
+    padding: 20px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.5px solid #6c6c6c23;
+    margin-bottom: 15px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal h1 {
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9), rgb(255, 255, 255));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal .iconModalHeader {
+    margin-bottom: 8px;
+    font-size: 28px;
+    color: #fff;
+    transition: 0.2s;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.containerModal .dialogModal .contentModal .headerModal .iconModalHeader:hover {
+    background-color: #ffffff28;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.containerModal .dialogModal .contentModal form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal form input {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff0f;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form input:focus {
+    border: 1px solid #ffffffe4;
+}
+
+.containerModal .dialogModal .contentModal form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff0f;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form textarea:focus {
+    border: 1px solid #ffffffe4;
+}
+
+.containerModal .dialogModal .contentModal form .btnFilter {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #ffffff0f;
+    color: #ffffffce;
+    transition: 0.3s;
+    border: 1px solid #9c9c9c66;
+    padding: 6px 12px;
+    outline: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal form .btnFilter option {
+    color: #000;
+}
+
+.containerModal .dialogModal .contentModal form .footerModal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-top: 0.5px solid #6c6c6c23;
+}
+
+.containerModal .dialogModal .contentModal form .footerModal button {
+    background-color: #fff;
+    color: #000000cf;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 25%;
+    margin-bottom: 0px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    padding: 4px 8px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.containerModal .dialogModal .contentModal form .footerModal button:hover {
+    transition: 0.3s;
+    background-color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+}
+
+.containerModal .dialogModal .contentModal form .contentIfSnippetPublic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal form .contentIfSnippetPublic label {
+    color: #c9c9c9;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.containerModal .dialogModal .contentModal form .contentIfSnippetPublic label span {
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .contentContainer .contentFunctionCreateSnippets {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .container .contentContainer .contentFunctionCreateSnippets .btnCreateSnippets {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .container .contentContainer .contentStatistics {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .container .contentContainer .contentFunctionsUser {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .container .contentContainer .contentFunctionsUser form {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container .contentContainer .contentFunctionsUser .btnFilter {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container .contentContainer .contentFunctionsUser .btnCreateFolder {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container .contentContainer .containerMainFolders {
+        width: 100%;
+    }
+
+    .container .contentContainer .contentAllFolders .folderCardGhost {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container .contentContainer .contentAllFolders .folderCardGhost:last-child  {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}

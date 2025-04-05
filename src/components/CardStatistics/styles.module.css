@@ -1,0 +1,77 @@
+.cardStatistics {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 260px;
+    background-color: #000000fc;
+    border: 1px solid #6c6c6c46;
+    border-radius: 8px;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.cardStatistics .statisticLoadingSkeleton {
+    background-color: #0e0e0e;
+    animation: pulse 1.5s infinite ease-in-out;
+    border-radius: 8px;
+    height: 35.1px;
+    width: 30px;
+}
+
+.cardSnippetLoadingSkeleton {
+    padding: 15px;
+    width: 545px;
+    margin-bottom: 10px;
+    background-color: #0e0e0e;
+    border-radius: 8px;
+    animation: pulse 0.5s infinite ease-in-out;
+    height: 200px;
+}
+
+.cardStatistics h1 {
+    margin-bottom: 0;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.cardStatistics p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.635);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.cardStatistics .contentHeaderSnippetsStatistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cardStatistics .contentHeaderSnippetsStatistics .iconSnippetsStatistics {
+    color: #4269e8;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    .cardStatistics {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
