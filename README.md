@@ -76,14 +76,22 @@ O escopo deste projeto é criar uma aplicação escalável, com a capacidade de 
 
     ```ts
     const firebaseConfig = {
-      apiKey: "AIzaSyBLUPdYQ6RiWbH8szw7YbmCiioVvfDGbC4",
-      authDomain: "snippetsdatabase-b7b44.firebaseapp.com",
-      projectId: "snippetsdatabase-b7b44",
-      storageBucket: "snippetsdatabase-b7b44.firebasestorage.app",
-      messagingSenderId: "367715969584",
-      appId: "1:367715969584:web:a95894304521e00a4fdbf5"
+      apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+      authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+      projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+      storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
     }
     ```
+   ```env
+    NEXT_PUBLIC_FIREBASE_API_KEY="sua-api-key"
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="seu-auth-domain"
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID="seu-project-id"
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="seu-storage-bucket"
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="seu-sender-id"
+    NEXT_PUBLIC_FIREBASE_APP_ID="seu-app-id"
+   ```
 
 ---
 
