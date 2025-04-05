@@ -1,40 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Snippets Tool
 
-## Getting Started
+![Imagem de Introdução](https://i.ibb.co/N2LSbw6Y/banner.png)
 
-First, run the development server:
+Snippets é uma plataforma prática e eficiente, criada para desenvolvedores que buscam uma solução simples para armazenar, organizar e compartilhar trechos de código.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Índice
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. [Visão Geral](#visão-geral)
+2. [Escopo do Projeto](#escopo-do-projeto)
+3. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+4. [Pré-requisitos](#pré-requisitos)
+5. [Instalação](#instalação)
+6. [Configuração do Firebase](#configuração-do-firebase)
+7. [Como Rodar o Projeto](#como-rodar-o-projeto)
+8. [Estrutura do Projeto](#estrutura-do-projeto)
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Visão Geral
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Organização Inteligente: Classifique seus códigos com tags personalizadas, facilitando a busca e a organização.
+- Compartilhamento Simplificado: Torne seus códigos públicos ou privados, promovendo colaboração com a comunidade de desenvolvedores.
+- Acesso Seguro: Acesse e armazene seus códigos de maneira segura de qualquer dispositivo.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Escopo do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+O escopo deste projeto é criar uma aplicação escalável, com a capacidade de gerenciar autenticação de usuários, armazenar e recuperar dados em tempo real e fornecer uma interface de usuário interativa. As funcionalidades principais incluem:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Autenticação de usuários com **NextAuth.js**.
+- Armazenamento e gerenciamento de dados de usuários no **Firebase Firestore**.
+- Criação de uma interface de usuário responsiva com **Next.js**.
+- Utilização de **TypeScript** para garantir maior segurança e robustez no código.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tecnologias Utilizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- **Next.js**
+- **NextAuth.js**
+- **Firebase**
+- **TypeScript**
+
+---
+
+## Pré-requisitos
+
+- Node.js
+- Yarn (opcional)
+- Conta no Firebase
+
+---
+
+## Instalação
+
+1. Instale as dependências:
+
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+---
+
+## Configuração do Firebase
+
+1. Acesse o [Console do Firebase](https://console.firebase.google.com/).
+2. Crie um novo projeto ou use um projeto existente.
+3. Ative os serviços necessários (Autenticação, Firestore, etc.).
+4. Crie um arquivo `.env.local` na raiz do projeto e adicione as variáveis de ambiente:
+
+    ```env
+    NEXT_PUBLIC_FIREBASE_API_KEY="sua-api-key"
+    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="seu-auth-domain"
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID="seu-project-id"
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="seu-storage-bucket"
+    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="seu-sender-id"
+    NEXT_PUBLIC_FIREBASE_APP_ID="seu-app-id"
+    ```
+
+---
+
+## Como Rodar o Projeto
+
+1. Para rodar o projeto em desenvolvimento:
+
+    ```bash
+    npm run dev
+    # ou
+    yarn dev
+    ```
+
+2. Acesse `http://localhost:3000` no seu navegador.
+
+## Estrutura do Projeto
+
+A estrutura do projeto segue uma organização lógica para facilitar o desenvolvimento e a manutenção:
+
+- **`/pages`**: Contém as páginas principais da aplicação, como as rotas de autenticação (`/auth`) e as rotas públicas ou privadas do sistema.
+- **`/components`**: Contém componentes reutilizáveis, como cards, cabeçalhos, modais, etc.
+- **`/service`**: Funções utilitárias e configuração do Firebase e outros serviços.
+- **`/styles`**: Arquivos de estilo, seja em CSS, SASS ou CSS-in-JS, aplicados globalmente ou por componente.
+
+---
