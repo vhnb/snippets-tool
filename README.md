@@ -115,5 +115,3 @@ A estrutura do projeto segue uma organização lógica para facilitar o desenvol
 - **`/components`**: Contém componentes reutilizáveis, como cards, cabeçalhos, modais, etc.
 - **`/service`**: Funções utilitárias e configuração do Firebase e outros serviços.
 - **`/styles`**: Arquivos de estilo, seja em CSS, SASS ou CSS-in-JS, aplicados globalmente ou por componente.
-
----
