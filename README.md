@@ -72,15 +72,17 @@ O escopo deste projeto é criar uma aplicação escalável, com a capacidade de 
 1. Acesse o [Console do Firebase](https://console.firebase.google.com/).
 2. Crie um novo projeto ou use um projeto existente.
 3. Ative os serviços necessários (Autenticação, Firestore, etc.).
-4. Crie um arquivo `.env.local` na raiz do projeto e adicione as variáveis de ambiente:
+4. No arquivo `/src/service/firebaseConnection.ts`, configure a conexão com o Firebase utilizando variáveis de ambiente para as credenciais. Isso garante maior segurança no seu código. Abaixo está um exemplo de como configurar::
 
-    ```env
-    NEXT_PUBLIC_FIREBASE_API_KEY="sua-api-key"
-    NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="seu-auth-domain"
-    NEXT_PUBLIC_FIREBASE_PROJECT_ID="seu-project-id"
-    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="seu-storage-bucket"
-    NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="seu-sender-id"
-    NEXT_PUBLIC_FIREBASE_APP_ID="seu-app-id"
+    ```ts
+    const firebaseConfig = {
+      apiKey: "AIzaSyBLUPdYQ6RiWbH8szw7YbmCiioVvfDGbC4",
+      authDomain: "snippetsdatabase-b7b44.firebaseapp.com",
+      projectId: "snippetsdatabase-b7b44",
+      storageBucket: "snippetsdatabase-b7b44.firebasestorage.app",
+      messagingSenderId: "367715969584",
+      appId: "1:367715969584:web:a95894304521e00a4fdbf5"
+    }
     ```
 
 ---
