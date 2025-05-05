@@ -4,11 +4,11 @@ import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.APIKEY_FIREBASE,
-  authDomain: "snippetsdatabase-b7b44.firebaseapp.com",
-  projectId: "snippetsdatabase-b7b44",
-  storageBucket: "snippetsdatabase-b7b44.firebasestorage.app",
-  messagingSenderId: "367715969584",
-  appId: "1:367715969584:web:a95894304521e00a4fdbf5"
+  authDomain: process.env.AUTHDOMAIN_FIREBASE,
+  projectId: process.env.PROJECTID_FIREBASE,
+  storageBucket: proces.env.STORAGEBUCKET_FIREBASE,
+  messagingSenderId: process.env.MESSAGEINGSENDERID_FIREBASE,
+  appId: process.env.APPID_FIREBASE
 }
 
 const firebaseApp = initializeApp(firebaseConfig)
