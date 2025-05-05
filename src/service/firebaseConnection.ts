@@ -3,7 +3,7 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBLUPdYQ6RiWbH8szw7YbmCiioVvfDGbC4",
+  apiKey: process.env.APIKEY_FIREBASE,
   authDomain: "snippetsdatabase-b7b44.firebaseapp.com",
   projectId: "snippetsdatabase-b7b44",
   storageBucket: "snippetsdatabase-b7b44.firebasestorage.app",
